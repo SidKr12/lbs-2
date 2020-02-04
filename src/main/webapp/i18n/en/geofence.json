@@ -1,0 +1,29 @@
+{
+  "lbsLiveEnterpriseApp": {
+    "geofence": {
+      "home": {
+        "title": "Geofences",
+        "createLabel": "Create a new Geofence",
+        "createOrEditLabel": "Create or edit a Geofence",
+        "notFound": "No Geofences found"
+      },
+      "created": "A new Geofence is created with identifier {{ param }}",
+      "updated": "A Geofence is updated with identifier {{ param }}",
+      "deleted": "A Geofence is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Geofence {{ id }}?"
+      },
+      "detail": {
+        "title": "Geofence"
+      },
+      "fenceId": "Fence Id",
+      "fenceName": "Fence Name",
+      "createdBy": "Created By",
+      "createdTime": "Created Time",
+      "modifiedBy": "Modified By",
+      "modifiedTime": "Modified Time",
+      "type": "Type",
+      "fenceCode": "Fence Code"
+    }
+  }
+}

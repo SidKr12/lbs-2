@@ -42,6 +42,7 @@ public class CacheConfiguration {
             createCache(cm, com.infosys.lbs.domain.User.class.getName());
             createCache(cm, com.infosys.lbs.domain.Authority.class.getName());
             createCache(cm, com.infosys.lbs.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.infosys.lbs.domain.Geofence.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

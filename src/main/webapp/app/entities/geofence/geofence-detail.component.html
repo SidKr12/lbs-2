@@ -1,0 +1,55 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="geofence">
+            <h2><span jhiTranslate="lbsLiveEnterpriseApp.geofence.detail.title">Geofence</span> {{geofence.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="lbsLiveEnterpriseApp.geofence.fenceId">Fence Id</span></dt>
+                <dd>
+                    <span>{{geofence.fenceId}}</span>
+                </dd>
+                <dt><span jhiTranslate="lbsLiveEnterpriseApp.geofence.fenceName">Fence Name</span></dt>
+                <dd>
+                    <span>{{geofence.fenceName}}</span>
+                </dd>
+                <dt><span jhiTranslate="lbsLiveEnterpriseApp.geofence.createdBy">Created By</span></dt>
+                <dd>
+                    <span>{{geofence.createdBy}}</span>
+                </dd>
+                <dt><span jhiTranslate="lbsLiveEnterpriseApp.geofence.createdTime">Created Time</span></dt>
+                <dd>
+                    <span>{{geofence.createdTime}}</span>
+                </dd>
+                <dt><span jhiTranslate="lbsLiveEnterpriseApp.geofence.modifiedBy">Modified By</span></dt>
+                <dd>
+                    <span>{{geofence.modifiedBy}}</span>
+                </dd>
+                <dt><span jhiTranslate="lbsLiveEnterpriseApp.geofence.modifiedTime">Modified Time</span></dt>
+                <dd>
+                    <span>{{geofence.modifiedTime}}</span>
+                </dd>
+                <dt><span jhiTranslate="lbsLiveEnterpriseApp.geofence.type">Type</span></dt>
+                <dd>
+                    <span>{{geofence.type}}</span>
+                </dd>
+                <dt><span jhiTranslate="lbsLiveEnterpriseApp.geofence.fenceCode">Fence Code</span></dt>
+                <dd>
+                    <span>{{geofence.fenceCode}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/geofence', geofence.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

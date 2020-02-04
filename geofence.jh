@@ -1,0 +1,19 @@
+entity Geofence {
+	fenceId Long,
+    fenceName String,
+    createdBy String,
+    createdTime Long,
+    modifiedBy String,
+    modifiedTime Long,
+    type Long,
+    fenceCode String
+}
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
